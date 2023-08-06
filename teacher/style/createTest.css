@@ -1,0 +1,81 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: sans-serif;
+}
+#create{
+	width: 50%;
+	margin-left: 23%;
+	margin-right: 23%;
+	padding: 2%;
+	box-shadow: 3px 5px 8px #909090;
+}
+#create-head{
+	color: white;
+	background-color: #0f0d3b;
+	padding: 2%;
+	width:96%; 
+}
+#create-inner{
+	width: 70%;
+	text-align: left;
+	margin-left: 3% ;
+	margin-top: 10px;
+}
+.create-inner-labels{
+	font-weight: bold;
+	font-family: sans-serif;
+}
+#name,#duration,#price{
+	padding: 5px;
+	border: 1px solid gray;
+	border-radius: 10px;
+	width: 80%;
+}
+#topic, #description{
+	width: 80%;
+	padding: 10px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	color: #404040;
+}
+.err{
+	color: red;
+}
+#s-btn{
+	width: 100%;
+	text-align: center;
+	margin-top: 15px;
+	padding-bottom: 10px;
+}
+#btn{
+	padding: 10px;
+	font-size: 14px;
+	font-family: monokoi;
+	text-align: center;
+	border: none;
+	border-radius: 8px;
+	width: 70%;
+	background-color: #0f0d3b;
+	color: white;
+}
+#screen{
+	display: none;
+	Width: 30%;
+}
+@media only screen and (max-width: 600px)
+{
+	#create{
+		width: 94%;
+		margin: 0px 3%;
+		margin-top: 50px;
+		padding: 0px;
+		line-height: auto;
+
+	}
+	#create-inner{
+		width: 80%;
+	}
+	#btn{
+	}
+}

@@ -1,0 +1,339 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+#testName{
+	width: 96%;
+	padding: 2%;
+	background-color: #0f0d3b;
+	font-family: sans-serif;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+}
+#subjectBox{
+	padding: 2px 1%;
+	background-color: #ededed;
+	overflow: hidden;
+	overflow-x: auto;
+	overflow-y: hidden;
+	width: 98%;
+}
+.subjectBtn{
+	font-weight: bold;
+	background-color:#ccffff;
+	color: #0f0d3b;
+	padding: 5px 10px;
+	border: 1px solid #0f0d3b;
+	font-size: 12px;
+	border-radius: 10px;
+	margin-right:3px;
+}
+#box{
+	display: flex;
+	flex-direction: row;
+	width: 98%;
+	padding: 1%;
+}
+#left{
+	width: 50%;
+	padding: 1%;
+	border: 1px solid black;
+}
+#questionBox{
+	font-size: 18px;
+	min-height: 100px;
+	border: 1px solid #909090;
+	border-radius: 10px;
+	width: 98%;
+	padding: 1%;
+	background-color: powderblue;
+}
+#numberBox{
+	font-weight: bold;
+}
+.inside{
+	display: inline;
+}
+.boxr{
+	display: inline-block;
+	vertical-align: middle;
+	width: auto;
+}
+.denr{
+	border-top: 1px solid black;
+}
+#numr,#denr{
+	border: 1px solid gray;
+	padding: 6px;
+	border-radius: 8px;
+}
+#denr{
+	margin-top: 3px;
+}
+.editbtn{
+	background: #dedede;
+	color: black;
+	border-radius: 5px;
+	margin: 10px;
+}
+#entry{
+	position: fixed;
+	top: 40%;
+	right: 50px;
+	width: 40%;
+	border: 1px solid gray;
+	border-radius: 10px;
+	padding: 10px;
+	display: none;
+}
+#savebtn, #addbtn{
+	display: inline;
+	padding: 6px 15px;
+	border: none;
+}
+.c-entry b span{
+	float: right;
+}
+#sabtns{
+	text-align: center;
+}
+#para{
+	width: 98%;
+	padding: 1%;
+	font-size: 14px;
+}
+.fr{
+	padding: 5px;
+	font-size: 16px;
+}
+.op{
+	margin-top:10px;
+	font-size: 18px;
+	width: 98%;
+	padding: 1%;
+	min-height: 46px;
+	border: 1px solid #909090;
+	border-radius: 10px;
+}
+#m-textBtn{
+	display: none;
+	background-color: #cccccc;
+	padding: 2px 1%;
+	overflow: hidden;
+}
+.m-textBtn-btn{
+	padding: 5px 8px;
+	background-color: #0f0d3b;
+	color: white;
+	font-size: 12px;
+	border: none;
+	border-radius: 5px;
+}
+.c-entry{
+	display: none;
+}
+#entry-box{
+	padding: 15px;
+}
+#math-editor{
+	position: fixed;
+	width: 30%;
+	right: 0;
+	top: 150px;
+	border: 1px solid gray;
+	padding: 2%;
+	display: none;
+}
+.mbox{
+	width: 98%;
+	padding: 1%;
+	border-radius: 8px;
+	font-family: sans-serif;
+}
+#math-editor-head{
+	font-weight: bold;
+}
+#math-editor-head span{
+	color: red;
+	font-weight: bold;
+	float: right;
+}
+#math-editor-result{
+	min-height: 50px;
+	border: 1px solid #ededed;
+	background-color: white;
+}
+#m-mbtn{
+	width: 98%;
+	padding: 1%;
+}
+#m-mbtn button{
+	padding: 6px 0px;
+	width: 40%;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+	background-color: blue;
+	color: white;
+	margin: 0px 4%;
+}
+#math-editor-btns {
+	width: 98%;
+	display: flex;
+	flex-direction: row;
+	overflow-x: auto;
+	overflow-y: hidden;
+	background-color: #cecece;
+}
+#math-editor-btns button{
+	padding: 6px 6px;
+	border: 1px solid #dadada;
+	border-radius: 4px;
+	margin-right: 5px;
+	font-size: 12px;
+}
+#math-code{
+	width: 96%;
+	border: 1px solid #ededed;
+	border-radius: 8px;
+	padding: 2%;
+	font-size: 16px;
+}
+#math-editor-items{
+	height: 300px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: #ededed;
+	border: 1px solid #dedede;
+}
+
+#mostUsed, #symbols,#alphabets, #operators,#functions,#sizeStyle{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	display: none;
+}
+#mostUsed{
+	display: flex;
+}
+#mostUsed div, #symbols div,#alphabets div ,#operators div,#functions div,#sizeStyle div{
+	min-width: 60px;
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #ededed;
+	border-radius: 5px;
+	text-align: center;
+	box-shadow: 2px 2px 3px 3px #dddddd;
+	background-color: white;
+	cursor: pointer;
+}
+#math-editor-btns{
+	border-radius: none;
+}
+@media only screen and (max-width: 600px)
+{	
+	#math-editor-btns::-webkit-scrollbar{
+		    display:none;
+		}
+	#entry{
+		display: none;
+		position: fixed;
+		bottom: 0px;
+		left: 0px;
+		width: 94%;
+		border-top: 1px solid #909090;
+		padding: 3%;
+		padding-bottom: 50px;
+		z-index: 5;
+		margin: 0px;
+		background-color: white;
+		border-radius: 8px 8px 0px 0px;
+		box-shadow: 8px 8px 8px 5px #909090;
+		display: block;
+	}
+	#tools{
+		display: none;
+	}
+	#entry-box{
+		width: 0px;
+		padding: 0px;
+		margin: 0px;
+		border: none;
+	}
+	#math-editor{
+		width: 96%;
+		padding: 2%;
+		border: none;
+		border-top: 1px solid gray;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		background-color: #fafafa;
+	}
+	#m-textBtn{
+		display: block;
+		    width:98%;
+		    overflow-x:auto;
+		    overflow-y:hidden;
+		    white-space:nowrap;
+		}
+		#m-textBtn::-webkit-scrollbar{
+		    display:none;
+		}
+	#box{
+		border: none;
+		width: 96%;
+		margin: 1%;
+		padding: 1%;
+	}
+	#left{
+		border: none;
+		padding: 0px;
+		margin: 0px;
+		width: 100%;
+	}
+	#optionBox{
+		border: none;
+		padding: 0px;
+		margin: 0px;
+		width: 100%;
+	}
+	#questionBox{
+		font-size: 14px;
+	}
+	.op{
+		font-size: 14px;
+		width: 98%;
+		padding: 1%;
+		margin: 0px;
+		margin-top: 10px;
+	}
+	#paragraph{
+		display: block;
+	}
+	.c-entry{
+	display: none;
+}
+	.c-entry{
+		width: 98%;
+		padding: 1%;
+	}
+	#para{
+		margin-top: 3px;
+		border: 1px solid gray;
+		border-radius: 8px;
+	}
+	#a ,#b{
+		float: right;
+		padding: 6px 15px;
+		border: none;
+		border-radius: 8px;
+		background-color: #ededed;
+		font-weight: 600;
+		margin-top: 5px;
+		color: #0f0d3b;
+	}
+}
